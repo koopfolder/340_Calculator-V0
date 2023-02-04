@@ -1,10 +1,12 @@
 import './App.css';
-import test from './components/test';
+import VzeroCalculator from './components/vzeroCalculator';
+import Test from './components/test';
 
 function App() {
   return (
     <div className="App">
-      <vzeroCalculator/>
+      <VzeroCalculator />
+      <Test />
       sdfsdsdf
     </div>
   );
