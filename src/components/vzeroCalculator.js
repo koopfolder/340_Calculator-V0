@@ -1,12 +1,12 @@
 import React from 'react';
 
-function vzeroCalculator() {
+export default function VzeroCalculator() {
     return (
-        <div>
-            <h1>
-                Hetllo0fadsfsdf
-            </h1>
-            
+        <div className="whiteCt">
+            <div className="cccc">
+                <div className="pinkScreen"></div>
+                <div></div>
+            </div>
         </div>
     )
 }
