@@ -1,5 +1,5 @@
 import './App.css';
-import VzeroCalculator from './components/VZeroCalculator';
+import VzeroCalculator from './components/vzeroCalculator';
 
 function App() {
   return (
