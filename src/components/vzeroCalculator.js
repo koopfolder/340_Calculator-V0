@@ -5,7 +5,8 @@ export default function VzeroCalculator() {
         <div className="whiteCt">
             <div className="cccc">
                 <div className="pinkScreen"></div>
-                <div></div>
+                <div className='sqBtn'></div>
+                <p className='text-red-400'>dfsdfsdfdsfs</p>
             </div>
         </div>
     )
