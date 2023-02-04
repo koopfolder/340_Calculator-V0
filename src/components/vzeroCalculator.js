@@ -3,9 +3,10 @@ import React from 'react';
 function vzeroCalculator() {
     return (
         <div>
-            Hetllo0fadsfsdf
+            <h1>
+                Hetllo0fadsfsdf
+            </h1>
+            
         </div>
-    );
+    )
 }
-
-export default vzeroCalculator
