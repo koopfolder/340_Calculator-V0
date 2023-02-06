@@ -6,8 +6,8 @@ import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
 
 const btnValues = [
-  ["AC", "+-", "%", "/"],
-  [7, 8, 9, "X"],
+  ["AC", "+-", "%", "÷"],
+  [7, 8, 9, "×"],
   [4, 5, 6, "-"],
   [1, 2, 3, "+"],
   [0, ".", "="],
@@ -19,7 +19,7 @@ const toLocaleString = (num) =>
 const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
 const math = (a, b, sign) =>
-  sign === "+" ? a + b : sign === "-" ? a - b : sign === "X" ? a * b : a / b;
+  sign === "+" ? a + b : sign === "-" ? a - b : sign === "×" ? a * b : a / b;
 
 const App = () => {
   let [calc, setCalc] = useState({
@@ -77,7 +77,7 @@ const App = () => {
       setCalc({
         ...calc,
         res:
-          calc.num === "0" && calc.sign === "/"
+          calc.num === "0" && calc.sign === "÷"
             ? "Can't divide with 0"
             : toLocaleString(
                 math(
@@ -129,7 +129,7 @@ const App = () => {
           return (
             <Button
               key={i}
-              className={btn === "=" ? "equals" : "" || btn === 0 ? "zero" : ""}
+              className={btn === "=" ? "equals" : "" || btn === "AC" ? "ac" : "" || btn === "." ? "" : "" || btn === 0 ? "zero" : "" || typeof btn === "string" ? "symbol" : ""}
               value={btn}
               onClick={
                 btn === "AC"
@@ -140,7 +140,7 @@ const App = () => {
                   ? percentClickHandler
                   : btn === "="
                   ? equalsClickHandler
-                  : btn === "/" || btn === "X" || btn === "-" || btn === "+"
+                  : btn === "÷" || btn === "×" || btn === "-" || btn === "+"
                   ? signClickHandler
                   : btn === "."
                   ? comaClickHandler
