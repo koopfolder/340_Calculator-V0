@@ -3,12 +3,12 @@
   width: 100%;
   margin-bottom: 10px;
   padding: 0 10px;
-  background-color: #4357692d;
-  border-radius: 10px;
+  background-color: #EBB3C2;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: white;
-  font-weight: bold;
+  color: black;
+  /* font-weight: bold; */
   box-sizing: border-box;
 }
